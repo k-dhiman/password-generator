@@ -39,7 +39,9 @@ let generatePassword = function() {
         }
     }
 
-    passwordElement.showPassword.value = password;
+    let trimmedPass = password.split('').splice(0, passLength).join('');
+
+    passwordElement.showPassword.value = trimmedPass;
 }
 
 
