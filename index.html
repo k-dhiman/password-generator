@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="password-generator-form" onsubmit="return false">
+            <div class="form-group show-password-wrapper">
+                <input type="text" class="show-password">
+                <span class="copy-to-clipboard">
+                    <span class="tool-tip">Copy to clipboard</span>
+                    <img src="./img/files-and-folders.png" alt="copy">
+                </span>
+            </div>
+            <div class="form-group">
+                <label for="length">Length of password</label>
+                <input type="number" value="8" id="length">
+            </div>
+            <div class="form-group">
+                <label for="capital">Include Capital Letters</label>
+                <input type="checkbox" checked id="capital">
+            </div>
+            <div class="form-group">
+                <label for="lowercase">Include Lowercase Letters</label>
+                <input type="checkbox" checked id="lowercase">
+            </div>
+            <div class="form-group">
+                <label for="number">Include Numders</label>
+                <input type="checkbox" checked id="number">
+            </div>
+            <div class="form-group">
+                <label for="special-char">Include Special Charactors</label>
+                <input type="checkbox" checked id="special-char">
+            </div>
+            <button id="generator-btn" class="btn">Generate Password</button>
+        </form>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
